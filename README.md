@@ -28,7 +28,7 @@ docker run -it -p 5000:5000 --rm --name web-notes web-notes:1.0.0
 
 This will run the container in interactive mode.
 
-You can now open a local browser on this URL: `http://localhost:5000/`.
+You can now open this URL on a local browser: `http://localhost:5000/`.
 
 ### 4. Terminate the container
 
