@@ -10,7 +10,7 @@ by Docker itself.
 ## 1. Clone the git repository
 
 ```shell
-git clone <GIT-URL>
+git clone https://github.com/aamm/web-notes.git
 ```
 
 ## 2. Build the Docker container image
