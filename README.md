@@ -26,8 +26,23 @@ docker build -t web-notes:1.0.0 .
 docker run -it -p 5000:5000 --rm --name web-notes web-notes:1.0.0
 ```
 
-This will run the container in interactive mode. You just need to press
-`Control+C` to terminate and delete the container.
+This will run the container in interactive mode.
+
+You can now open a local browser on this URL: `http://localhost:5000/`.
+
+### 4. Terminate the container
+
+You just need to press `Control+C` to terminate and delete the container.
+
+Alternatively, you can terminate the container the "Docker way":
+
+```shell
+docker stop web-notes
+```
+
+The `--rm` option on the `docker run` command tells Docker to completely
+destroy the container, including its data when the container is no long
+running.
 
 # Notes
 
