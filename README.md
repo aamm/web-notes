@@ -41,7 +41,7 @@ docker stop web-notes
 ```
 
 The `--rm` option on the `docker run` command tells Docker to completely
-destroy the container, including its data when the container is no long
+destroy the container, including its data, when the container is no long
 running.
 
 # Notes
