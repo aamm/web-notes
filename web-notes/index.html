@@ -1,0 +1,36 @@
+<html>
+	<header>
+		<link href="style.css" rel="stylesheet">
+		<title>Web Notes</title>
+	</header>
+	<body>
+		<input type="text" id="noteTitle" oninput="updateTitleHint()" placeholder="Note title"/><br>
+		<div class="lengthHint" id="titleHint">0/255 characters</div>
+		<textarea id="noteText" oninput="updateTextHint()"placeholder="Note text"></textarea><br>
+		<div class="lengthHint" id="textHint">0/1024 characters</div>
+		<button type="submit" onclick="postNote()">Post Note</button>
+
+		<div id="notesList">
+			<div class="notesTableBorder">
+				<table id="notesTable" class="noteBox">
+					<thead class="noteBox">
+						<tr>
+							<th>Title</th>
+							<th>Text</th>
+						<tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+
+		<script src="rest_api.js"></script>
+		<script src="script.js"></script>
+		<script>
+			updateTitleHint();
+	    updateTextHint();
+			getNotes();
+		</script>
+
+	</body>
+</html>

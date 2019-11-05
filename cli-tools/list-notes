@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+# List all notes on the server.
+
+curl --silent -X GET "localhost:5000/notes"

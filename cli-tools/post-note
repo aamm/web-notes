@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#
+# Adds a note to the server.
+#
+# Usage: post-note "Note title" "Note contents"
+
+# Replaces all space characters with %20, since the title is used as the ID of
+# each note.
+title=${1// /%20}
+
+curl --silent \
+     -X POST "localhost:5000/note/${title}" \
+     -H "Content-Type: application/json" \
+     -d "{\"text\": \"${2}\"}"
