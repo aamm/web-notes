@@ -1,5 +1,16 @@
 # Description
 
+This project consists of:
+
+1. A Python REST API based on Flask that can be used to store and retrieve notes. Each note consists of a a note title and a note content. The note title is used as the unique ID of a note.
+2. A single HTML page with a JS script that reads and writes notes using the REST API
+
+The REST API has only 3 functions:
+
+1. GET the list of all notes.
+2. Given the note title, GET the text of this note.
+3. Given the note title and text, POST a new note, or update an existing note.
+
 # How to run this project
 
 ## 0. Prerequisites
